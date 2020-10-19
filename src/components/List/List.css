@@ -1,0 +1,52 @@
+/* Div 3 */
+
+.div3 {
+  flex-grow: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.div3-sub {
+  display: flex;
+  padding: 1rem 0;
+  color: #7f8c8d;
+  border-top: 1px solid #7f8c8d;
+}
+
+.div3-sub:nth-last-child(1) {
+  border-bottom: 1px solid #7f8c8d;
+}
+
+.div3-sub .delete-icon,
+.div3-sub .tick-icon {
+  cursor: pointer;
+}
+
+.div3-sub .delete-icon:hover,
+.div3-sub .tick-icon:hover {
+  color: #ecf0f1;
+}
+
+.div3-sub .todo-text {
+  flex-grow: 1;
+  margin: 0 1rem;
+  color: #ecf0f1;
+}
+
+.div3-sub.completed .todo-text {
+  color: #7f8c8d;
+  text-decoration: line-through;
+}
+
+.no-tasks {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-tasks span:nth-child(1) {
+  font-size: 3rem;
+}

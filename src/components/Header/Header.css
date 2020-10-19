@@ -1,0 +1,56 @@
+/* Div 1 */
+
+.div1 {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.div1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.div1-left .date {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.div1-left .active-tasks {
+  color: #61dbfb;
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+}
+
+.div1-right span {
+  color: #7f8c8d;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.div1-right span:hover {
+  color: #ecf0f1;
+}
+
+.div1-right span.active {
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.div1-right span:nth-last-child(1) {
+  margin-right: 0;
+}
+
+/* Styling for Mobile Devices */
+@media only screen and (max-width: 480px) {
+  .div1 {
+    flex-direction: column;
+  }
+
+  .div1 .div1-right {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+}
